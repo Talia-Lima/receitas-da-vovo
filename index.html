@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="exemplo prático do uso de conceitos do html 5 básico a intermediário e CSS básico"> 
+    <meta name="keywords" content="html 5 básico, html 5 intermediário, css básico, programação web frontend">
+    <meta name="author" content="Talia Lima">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Livros de receitas da vovó</title>
+</head>
+<body>
+    
+    <header>
+
+        <h1>Livros de receitas da vovó</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#receitas-doces">Receitas doces</a></li>
+                <li><a href="#receitas-salgadas">Receitas salgadas</a></li>
+                <li><a href="#pagina-principal">Página principal</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="receitas-salgadas">
+
+            <article>
+
+                <h2>Canja da vovó Mariah</h2>
+
+                <figure>
+                    <img src="https://vovopalmirinha.com.br/wp-content/uploads/2016/05/canja-cremosa.jpg" alt="uma canja de galinha cremosa">
+                    
+                    <figcaption>
+                        Canja de galinha cremosa
+                    </figcaption>
+
+                </figure>
+
+                <p>Receita da famosa canja de galinha da vovo Mariah, otima para dias mais frios e para curar resfriados</p>
+
+                <h3>Ingredientes:</h3>
+
+                <ul>
+                    <li>1/2 kg de coxinha da asa</li>
+                    <li>1 cebola</li>
+                    <li>4 dentes de alho</li>
+                    <li>1 cenoura grande</li>
+                    <li>1 caldo de galinha</li>
+                    <li>1/2 xícara de arroz</li>
+                    <li>salsinha a gosto</li>
+                    <li>1 colher de sopa de óleo</li>
+                    <li>1 litro e meio de água fervente</li>
+                </ul>
+
+                <h3>Modo de preparo:</h3>
+
+                <ol>
+                    <li>Temperar as coxas de frango com sal</li>
+                    <li>Na panela de pressão coloque o óleo, deixe esquentar e acrescente o frango, cebola, alho e o caldo de galinha</li>
+                    <li>Refogue</li>
+                    <li>Adicione o arroz, cenoura</li>
+                    <li>Deixar em fogo médio por 15 a 20 minutos</li>
+                    <li>Espere a pressão sair, acrescente salsinha e sirva a gosto</li>
+                </ol>
+
+            </article>
+
+        </section>
+
+        <section class="receitas-doces">
+
+            <article>
+
+                <h2>Bolo de chocolate da tia Terê</h2>
+
+                <figure>
+                    <img src="https://static.itdg.com.br/images/360-240/3b03a942ab534200a0a80eb324828ccb/246606-postprocess-71802381-1893-4fbe-b302-726bfca18774.jpg" alt="Um bolo de chocolate">
+
+                    <figcaption>
+                        Bolo de chocolate clássico
+                    </figcaption>
+
+                </figure>
+
+                <p>Receita clássica de bolo de chocolate para momentos especiais com a família, amigos ou ambos.</p>
+
+                <h3>Ingredientes:</h3>
+
+                <ul>
+                    <li>3 ovos</li>
+                    <li>2 xícaras de farinha de trigo</li>
+                    <li>1/2 xícara de óleo</li>
+                    <li>1 pitada de sal</li>
+                    <li>1 e 1/2 xícara de açucar</li>
+                    <li>1 xícara de chocolate em pó</li>
+                    <li>1 colher de fermento</li>
+                    <li>1 xícara de água</li>
+                </ul>
+
+                <h3>Modo de preparo:</h3>
+
+                <ol>
+                    <li>Bata todos os ingredientes no liquidificador</li>
+                    <li>Despeje a massa em uma tigela e adicione a água e o fermento</li>
+                    <li>Despeje a massa em uma forma untada e asse no forno a 200 graus</li>
+                    <li>Desenforme ainda quente</li>
+                </ol>
+
+            </article>
+
+        </section>
+
+        <form action="" method="get" enctype="multipart/form-data">
+
+            <h2>Envie sua receita!</h2>
+
+            <label for="nome-receita">Nome da receita</label>
+            <input type="text" id="nome-receita" placeholder="Insira aqui o nome da sua receita">
+
+            <br><br>
+
+            <label for="categoria-receita">Categoria</label>
+
+            <select name="categoria-receita" id="categoria-receita">
+            
+                <option value="receita-salgada" >Salgada</option>
+
+                <option value="receita-doce">Doce</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="descricao-receita">Descrição</label>
+            <br>
+            <textarea name="descricao-receita" id="descricao-receita" cols="35" rows="15"></textarea>
+
+            <br><br>
+
+            <label>A receita possui alguma restrição alimentar?</label>
+            <br><br>
+
+            <label for="sem-gluten">Sem glutén</label>
+            <input type="checkbox" name="sem-glutem" id="sem-gluten">
+
+            <label for="sem-lactose">Sem lactose</label>
+            <input type="checkbox" name="sem-lactose" id="sem-lactose">
+
+            <label for="outros">Outros</label>
+            <input type="checkbox" name="outros" id="outros">
+
+            <br><br>
+
+            <label for="imagem-receita">Envie uma foto da sua receita!</label>
+            <br><br>
+            <input type="file" name="imagem-receita" id="imagem-receita">
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <br>
+
+    </main>
+    
+    <aside>
+        <nav>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#nossa-história">Nossa história</a></li>
+            <li><a href="#problemas-com-o-site">Problemas com o site?</a></li>
+        </nav>
+    </aside>
+
+    <footer>
+
+        <address>
+            <p>Email: receitasretro@retro.com</p>
+            <p>Telefone: 11-9-9999-9999</p>
+            <p>Endereço: Rua dos bobos número 0 - São Paulo</p>
+        </address>
+
+        <p>Receitas da vovó todos os direitos reservados 2025</p>
+
+    </footer>
+
+</body>
+</html>
